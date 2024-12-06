@@ -106,7 +106,7 @@ function isPointGeometry(geometry: Geometry): geometry is Point {
     return geometry.type === 'Point';
 }
 
-function Dashboard() {
+function DashboardV2() {
     const theme = useTheme();
     const mapContainerRef = useRef<HTMLDivElement>(null);
 
@@ -690,8 +690,8 @@ function Dashboard() {
         >
             <Breadcrumbs
                 sx={{mb: 2}}
-                heading='Dashboard'
-                links={[{label: 'Dashboard', href: '/main-dashboard'}]}
+                heading='Dashboard v2'
+                links={[{label: 'Dashboard v2', href: '/dashboard-v2'}]}
             />
             <Box
                 sx={{
@@ -1023,4 +1023,4 @@ function Dashboard() {
     );
 }
 
-export default Dashboard;
+export default DashboardV2;
