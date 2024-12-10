@@ -1,4 +1,6 @@
 import {isValid, format, differenceInSeconds} from 'date-fns';
+import Holidays from 'date-holidays';
+const hd = new Holidays('PT');
 
 const dateUtils = {
     formatDate: function(date?: string | Date, fallbackValue: Date = new Date()): string {
@@ -23,6 +25,9 @@ const dateUtils = {
     getDayOfWeek: function(dateStr: string): number {
         const date = new Date(dateStr);
         return date.getDay();
+    },
+    isHoliday: function(date: Date): boolean {
+        return !!hd.isHoliday(date);
     }
 };
 

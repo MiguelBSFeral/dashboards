@@ -12,5 +12,7 @@ declare module "maplibre-gl-indoorequal" {
         remove(): void;
         on(event: string, callback: (...args: any[]) => void): void;
         off(event: string, callback: (...args: any[]) => void): void;
+        onAdd(): any;
+        onRemove(): any;
     }
 }

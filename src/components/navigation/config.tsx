@@ -40,6 +40,11 @@ const navConfig: NavSection[] = [
                 path: paths.dashboardV2,
                 icon: icons.dashboard,
             },
+            {
+                title: 'v3 @ 2024-12-10',
+                path: paths.dashboardV3,
+                icon: icons.dashboard,
+            },
         ],
     },
 ];

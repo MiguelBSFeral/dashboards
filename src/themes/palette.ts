@@ -96,6 +96,20 @@ const COMMON = {
     warning: WARNING,
     error: ERROR,
     grey: GREY,
+    metricClassification: {
+        comfortable: '#35d900',
+        moderate: '#7ED900',
+        uncomfortable: '#D9D900',
+        veryUncomfortable: '#f46d43',
+        unbearable: '#a50026',
+    },
+    temperatureClassification: {
+        cold: '#35d900',
+        fresh: '#7ED900',
+        comfortable: '#D9D900',
+        warm: '#f46d43',
+        hot:'#a50026',
+    },
     divider: alpha(GREY[500], 0.24),
     action: {
         hover: alpha(GREY[500], 0.08),

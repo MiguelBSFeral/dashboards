@@ -225,7 +225,7 @@ function NavList(props: NavListProps) {
     const { item, depth } = props;
     const { pathname } = useLocation();
     const isExternalLink = item.path.includes('http');
-    const active = isNavItemActive(item, pathname);
+    const active = isNavItemActive(item, pathname === '/' ? '/dashboard-v3' : pathname);
     const [open, setOpen] = useState(active);
 
     useEffect(() => {

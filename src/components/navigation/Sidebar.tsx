@@ -87,6 +87,10 @@ function Sidebar(props: SidebarProps) {
 
     const isLargeScreen = useMediaQuery(theme.breakpoints.up('lg'));
 
+    console.log("-------------------------")
+    console.log("JSON.stringify(navConfig) -> ", JSON.stringify(navConfig))
+    console.log("-------------------------")
+
     const content = (
         <ScrollBar
             sx={{
